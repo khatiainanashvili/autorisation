@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    
+</head>
+<body>
+
+<div class="main">
+  <header>
+     <div class="header-top">
+      <a href="./index.html" class="logo">
+         <div class="logo">
+             <img src="./img/Untitled-Artwork (19).png" alt="">
+         </div>
+        </a>
+         <div class="reg-btn-container">
+            <input type="button" id="btn" class="btn btn-aut" value="autorisation">
+            <input type="button" id="btn2" class="btn btn-reg" value="registration">
+        </div>
+      </div>
+    <nav>
+    <ul class="nav">
+        <li>
+          <i class="fa-solid fa-house"></i>
+          <a href="index.html"  class="menu-item">Home</a>
+        </li>
+        <li >
+        <i class="fa-solid fa-bug"></i>
+        <a href="#" class="menu-item">Mantis Shrimp</a>
+        </li>
+        <li >
+          <i class="fa-solid fa-envelopes-bulk"></i>
+          <a href="#" class="menu-item">Contact</a>
+        </li>
+        <li >
+          <i class="fa-solid fa-address-card"></i>
+          <a href="#" class="menu-item">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+              <div id="modal">
+                   <div class="container"> 
+
+
+                    <svg version="1.1" id="close" class="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 1190.6 841.9" style="enable-background:new 0 0 1190.6 841.9;" xml:space="preserve">
+                 <style type="text/css">
+                   .st0{display:none;}
+
+                 </style>
+                 <g id="Layer_1_1_" class="st0">
+                 </g>
+                 <g id="Layer_2_1_">
+                   <path class="st1" d="M732.7,717.6L266.2,272.2c-30.9-29.6-32.1-78.6-2.5-109.5l48.5-50.7c29.5-30.9,78.6-32.1,109.5-2.5
+                     l466.4,445.4c30.9,29.5,32.1,78.6,2.5,109.5l-48.5,50.7C812.7,746,763.6,747.1,732.7,717.6z"/>
+                   <path class="st1" d="M417,722.1l475.8-454.4c28.3-27.1,29.4-72,2.3-100.3l-57.5-60.2c-27.1-28.3-72-29.4-100.3-2.3L261.5,559.3
+                     c-28.3,27.1-29.4,72-2.3,100.3l57.5,60.2C343.7,748.1,388.6,749.2,417,722.1z"/>
+                 </g>
+                 </svg>
+
+
+                    <div class="input">
+                     <input type="text" id="username" class="formInput" placeholder="Username">
+                     <input type="password" id="password" class="formInput"  placeholder="Password">
+                    </div>
+                     <input type="submit" id="sbm" value="log in">
+                    
+                   <label for="password" id="label">The  username or password you entered is incorrect!</label>
+              </div>
+          </div>
+
+          
+
+          <div id="modalreg">
+            <div class="container"> 
+
+             <svg version="1.1" id="close" class="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1190.6 841.9" style="enable-background:new 0 0 1190.6 841.9;" xml:space="preserve">
+          <style type="text/css">
+            .st0{display:none;}
+
+          </style>
+          <g id="Layer_1_1_" class="st0">
+          </g>
+          <g id="Layer_2_1_">
+            <path class="st1" d="M732.7,717.6L266.2,272.2c-30.9-29.6-32.1-78.6-2.5-109.5l48.5-50.7c29.5-30.9,78.6-32.1,109.5-2.5
+              l466.4,445.4c30.9,29.5,32.1,78.6,2.5,109.5l-48.5,50.7C812.7,746,763.6,747.1,732.7,717.6z"/>
+            <path class="st1" d="M417,722.1l475.8-454.4c28.3-27.1,29.4-72,2.3-100.3l-57.5-60.2c-27.1-28.3-72-29.4-100.3-2.3L261.5,559.3
+              c-28.3,27.1-29.4,72-2.3,100.3l57.5,60.2C343.7,748.1,388.6,749.2,417,722.1z"/>
+          </g>
+          </svg>
+             <div class="input">
+              <input type="email"id="emailReg" class="formInput"  placeholder="Enter E-mail">
+              <input type="text"id="usernameReg" class="formInput"   placeholder="Enter Username">
+              <input type="password" id="passwordReg" class="formInput" placeholder="Create Password">
+              <input type="password" id="passwordConf" class="formInput" placeholder="Confirm Password">
+             </div>
+              <input type="submit" id="sbm2" value="Sign Up">
+             
+            <label for="password"  id="label">The  username or password you entered is incorrect!</label>
+       </div>
+   </div>
+</div>
+
+
+
+
+<script src="https://kit.fontawesome.com/1e9dba953f.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange-color: rgb(221, 93, 8);
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px ;
+    background-color: rgba(53, 3, 3, 0.647);
+    margin-bottom: 20px;
+}
+
+.reg-btn-container {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    border: solid var(--orange-color) 3px;
+    background-color: rgba(255, 255, 255, 0.219);
+    cursor: pointer;
+}
+.logo {
+    margin: 15px 30px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+    background-color: rgba(0, 57, 70, 0.637);
+}
+.nav li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(187, 255, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 10PX;
+    cursor: pointer;
+}
+.nav a{
+    text-decoration: none;
+    color:var(--orange-color);
+    font-family: 'Edu VIC WA NT Beginner';
+    font-weight: 600;
+}
+.nav i {
+    display: none;
+    color:var(--orange-color);
+    font-size: 1.5rem;
+}
+.nav li:hover{
+    background-color: rgba(221, 93, 8, 0.445);
+    transition:background-color 0.33s  ease-in-out ;
+}
+.nav li:hover a, 
+.nav li:hover i{
+    
+    color: rgb(184, 253, 253);
+    transition: color 0.33s ease-in-out ;
+}
+
+.btn{
+    padding:5px 20px;
+    border: transparent;
+    border-radius: 10px;
+    color: rgb(184, 253, 253);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Teko';
+    font-weight: bold;
+    cursor: pointer;
+    margin:10px 20px;
+
+}
+.btn-aut { 
+    background-color: var(--orange-color);
+}
+
+.btn-aut:hover{
+    background-color:rgba(10, 17, 17, 0.404);
+    color: var(--orange-color);
+    transition:background-color 0.33s  ease-in-out ;
+    transition:color 0.33s  ease-in-out ;
+}
+.btn-reg{
+    background-color: rgb(221, 58, 8);
+}
+.btn-reg:hover{
+    background-color:rgba(10, 17, 17, 0.404);
+    color: rgb(221, 58, 8);
+    transition:background-color 0.33s  ease-in-out ;
+    transition:color 0.33s  ease-in-out ;
+
+}
+.main{
+    background-image: url(./img/mantisshrimp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   top: -50%;
+   left: 50%;
+   margin:10vh 20vw;
+   padding-bottom: 50px; 
+   background-color: rgba(52, 15, 2, 0.647);
+   border-radius: 100px;
+   border:solid 3px var(--orange-color) !important;
+}
+#modal{
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(38, 42, 43, 0.637);
+            
+}
+.formInput
+{
+    background-color: rgba(0, 255, 255, 0.244);
+    width: 100%;
+    height: 30px;
+    margin: 30px 0 ;
+    border-radius:70px;
+    border-color:rgb(166, 252, 252);
+    padding: 25px 15px;
+    outline: none;
+    
+}
+.formInput:focus
+{
+ outline: none;
+ border-color: rgb(255, 255, 255);
+}
+.formInput::placeholder {
+    color: white;
+    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+#close{
+    align-self: flex-end;
+    float: inline-end !important;
+    margin: 40px 5% 0 0 ;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    fill: var(--orange-color); 
+    cursor: pointer;
+    
+}
+#close:hover{
+    background-color: rgba(99, 105, 109, 0.518);
+    fill: rgba(166, 252, 252, 0.705); 
+}
+label{
+    color: rgba(255, 0, 0, 0.526);
+    display: none;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+#sbm, #sbm2{
+    padding:10px 50px;
+    background-color: rgb(90, 235, 235);
+    border: transparent;
+    border-radius: 70px;
+    font-family: 'Edu VIC WA NT Beginner';
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+#sbm:hover{
+    background-color:rgb(124, 194, 194);
+    
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 58, 58);
+    background-color: rgba(255, 255, 255, 0.544);
+    padding-left:50px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.user-page{
+    background-image: url(./img/mantisshrimp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#modalreg{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(233, 99, 192, 0.416);
+    
+        
+}
+.clossse {
+    display: none;
+}
+.show {
+    display: block;
+}
+.backgr{
+    background-image: url(./img/mantis2.png);
+    height: 100vh;
+    background-size: cover;
+}
+h2 {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline;
+}
+.userpage-logo {
+    background: transparent !important;
+    border: 0 !important;
+}
+.avatar-image  {
+    width:150px ;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(0, 27, 50);
+    margin: 30px
+}
+.avatar-image img {
+    width:150px ;
+    height: 150px;
+    
+}
+
+@media (max-width: 800px){
+    .container {
+        
+        margin:50px 150px;
+        
+     
+     }
+}
+
+@media (max-width: 540px){
+
+    .header-top{
+        width: 100vw;
+        padding: 0;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+
+    }
+.reg-btn-container {
+
+        width: 150px;
+    }
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 30vw;
+    position: static;
+    border-radius: 0 0 100px 0;
+    height: 75vh;
+
+}
+
+.nav-show {
+    width: 55vw;
+}
+
+.nav li{
+    margin: 30px 0;
+}
+.nav i {
+    display: flex;
+}
+
+a{
+    display: none;
+    
+}
+
+.show {
+    display: flex;
+    margin-left: 10px;
+}
+.container {
+    
+    margin:60px 30px;
+    padding-bottom: 50px; 
+   
+    border-radius: 50px;
+
+ }
+
+}
+
