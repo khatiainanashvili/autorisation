@@ -8,13 +8,16 @@ const registration = document.querySelector('#btn2')
 const closee = document.querySelectorAll(".close")
 const menuItem = document.querySelectorAll('.menu-item')
 const navigation = document.querySelector('ul')
+const modalreg = document.getElementById('modalreg')
 
 navigation.addEventListener('click', () => {
   menuItem.forEach(e => {
-    e.classList.toggle('show')
+    e.classList.add('show')
   });
-  navigation.classList.toggle('nav-show')
+  navigation.classList.add('nav-show')
+
 })
+
 
 autorisation.addEventListener("click", () => {
     modal.style.display = "block"
@@ -84,3 +87,18 @@ window.onclick = function(event) {
   }
 }
 
+window.onclick = function(event) {
+  if (event.target == modal || event.target == modalreg) {
+    modal.style.display = "none";
+    modalreg.style.display = "none";
+  }
+      
+  if(event.target == navigation) {
+    navigation.classList.remove('nav-show')
+    menuItem.forEach(e => {
+      e.classList.remove('show')
+    });
+    
+  }
+  
+}
